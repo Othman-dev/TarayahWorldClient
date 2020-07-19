@@ -1,0 +1,379 @@
+.mainTheme {
+	background-color: black;
+	position: relative;
+	height: 100vh;
+	width: 100vw;
+	overflow: hidden;
+}
+
+.main {
+	opacity: 0;
+	transition: all 1s ease-in;
+}
+
+.mainFadeIn {
+	opacity: 1;
+}
+
+/*----------Intro----------*/
+
+.intro {
+	position: fixed;
+	z-index: 20;
+	height: 100vh;
+	width: 100vw;
+}
+
+.introDone {
+	animation: introDone 2s;
+}
+
+.tarayahIntro {
+		z-index: 21;
+		position: absolute;
+		height: 30vh;
+		width: 30vw;
+		transform: translate(-50%,-50%);
+		top: 39%;
+		left: 48%;
+}
+
+
+.worldIntro {
+		z-index: 21;
+		position: absolute;
+		height: 20vh;
+		transform: translate(-50%,-50%);
+		width: 20vw;
+		top: 60%;
+		left: 55.1%;
+}
+
+#myVideo {
+  position: fixed;
+  height: 100%;
+  width: 100%;
+  top: 0;
+  left: 0;
+  object-fit: cover;
+}
+
+.introButton {
+	color: white;
+	background-color: rgb(0, 0, 0, 0); 
+	position: absolute;
+	top: 80vh;
+	left: 46vw;
+	height: 13vh;
+	border-radius: 25%;
+	transform: translate (-50%, -50%);
+	font-size: 2vh;
+	cursor: pointer;	
+}
+
+.introButtonEnter {
+	font-size: 6vh
+}
+
+/*----------Header----------*/ 
+
+.header {
+	font-size: 8vh;
+	position: fixed;
+	top: 0;
+	left: 50%;
+	width: 100vw;
+	color: white;
+	transform: translate(-50%, 0)
+}
+
+.socialsIcon {
+	top: 0;
+	height: 4vh;
+	width: 4vh;
+	padding-top: 1vh;
+	padding-left: 0.5vh;
+}
+
+.tarayahHeader{
+		position: absolute;
+		height: 10vh;
+		left: 40%;
+}
+
+.worldHeader{
+		position: absolute;
+		height: 10vh;
+		left: 50%;
+}
+
+/*----------NavBar----------*/
+
+.navBar {
+	position: absolute;
+	bottom: 0;
+	color: white;
+	height: 4vh;
+	width: 100%;
+	opacity: 0;
+	transition: all 1s ease-in-out;
+	z-index: 10;
+	text-shadow: 1px 2px #07070d;
+}
+
+.navBarOpen {
+	opacity: 1;
+}
+
+.menu {
+	z-index: 10;
+	height: 3vh;
+	width: 5vh;
+	position: fixed;
+	bottom: 1vh;
+	left: 50%;
+	transform: translate(-50%, -50%);
+	cursor: pointer;
+}
+
+.line1 {
+	position: fixed;
+	height: 15%;
+	width: 100%;
+	background-color: white;
+	top: 0;
+	border-radius: 30%;
+	transition: all 1s ease;
+	box-shadow: 1px 2px #07070d;
+}
+
+.line1.menuX {
+	transform: rotate(45deg) translate(1vh, 0.6vh);
+}
+
+.line2 {
+	position: fixed;
+	height: 15%;
+	width: 100%;
+	background-color: white;
+	top: 50%;
+	border-radius: 30%;
+	opacity: 1;
+	transition: all 1s ease;
+	box-shadow: 1px 2px #07070d;
+}
+
+.line2.menuX {
+	transform: translate(0, 2vh);
+	opacity: 0;
+}
+
+
+.line3 {
+	position: fixed;
+	height: 15%;
+	width: 100%;
+	background-color: white;
+	top: 100%;
+	border-radius: 30%;
+	transition: all 1s ease;
+	box-shadow: 1px 2px #07070d;
+}
+
+.line3.menuX {
+	transform: rotate(-45deg) translate(1.4vh, -1vh);
+}
+
+.socials {
+	position: fixed;
+	right: 23%;
+	cursor: pointer;
+}
+
+.news {
+	position: fixed;
+	left: 40%;
+	cursor: pointer;
+}
+
+.about {
+	position: fixed;
+	right: 40%;
+	cursor: pointer;
+}
+
+.art {
+	position: fixed;
+	left: 7%;	
+	cursor: pointer;
+}
+
+.music {
+	position: fixed;
+	left: 23%;
+	cursor: pointer;
+}
+
+.contact {
+	position: fixed;
+	right: 7%;
+	cursor: pointer;
+}
+
+/*----------Planets----------*/
+
+.planet {
+	position: fixed;
+	z-index: 5;
+	background-color: gray;
+	height: 6rem;
+	width: 6rem;
+	transform: translate(-50%, -50%);
+	border-radius: 50%;
+	transition: all 1s ease;
+}
+
+.planetText {
+		display: none;
+		font-size: 28px;
+		color:  #07070d;
+		position: absolute;
+		top: 47.5%;
+		left: 50%;
+		transform: translate(-50%, -50%);
+}
+
+.planet1 {
+	top: 50vh;
+	left: 50vw;
+	background-image: url(../pics/NewsImg.jpg);
+	background-size: contain;
+    background-repeat: no-repeat;
+}
+
+.planet2 {
+	top: 30vh;
+	left: 15vw;
+	background-image: url(../pics/ArtImg.jpg);
+	background-size: contain;
+    background-repeat: no-repeat;
+}
+
+.planet3 {
+	top: 58vh;
+	left: 60vw;
+	background-image: url(../pics/AboutImg.jpg);
+	background-size: contain;
+    background-repeat: no-repeat;
+}
+
+.planet4 {
+	top: 70vh;
+	left: 92vw; 
+	background-image: url(../pics/ContactImg.jpg);
+	background-size: contain;
+    background-repeat: no-repeat;
+}
+
+.planet5 {
+	top: 80vh;
+	left: 40vw;
+	background-image: url(../pics/MusicImg.png);
+	background-size: contain;
+    background-repeat: no-repeat;
+}
+
+.planet6 {
+	top: 20vh;
+	left: 70vw;
+	background-image: url(../pics/SocialsImg.jpg);
+	background-size: contain;
+    background-repeat: no-repeat;
+}
+
+.planetZoom {
+	transform: scale(1.5) translate(-30%, -30%);
+}
+
+.planetEnter {
+	transform: scale(17);
+	top: 45vh;
+	left: 65vw;
+	z-index:6;
+}
+
+.resetBtn{
+	position: absolute;
+	display: none;
+	text-size: 10px;
+	color: white;
+	height: 20px;
+	width: 170px;
+	top: 50%;
+	left: 10%;
+	cursor: pointer;
+}
+
+.screen {
+	position: absolute;
+	z-index: 10;
+	overflow: visible;
+	opacity: 0;	
+	display: none;
+	color: white;
+	background-color: #07070d;
+	height: 86vh;
+	width: 67vw;
+	transform: translate(-50%, -50%);
+	top: 50vh;
+	left: 69vw;
+	padding: 5% 5%;
+	border-radius: 15% / 50%;
+	animation: screenOn 2.5s;
+	overflow: hidden;
+}
+
+.screenOpacity{
+    opacity: 0.7;
+}
+
+.screenNoBG {
+    background-color: transparent;
+	text-shadow: 1px 2px #07070d;
+	width: 77vw;
+	opacity: 1;
+}
+
+/*----------Others----------*/
+
+.flex {
+	display: flex;
+}
+
+.opacityOff {
+	opacity: 1;
+}
+
+.none {
+	display: none;
+}
+
+
+/*----------Animation----------*/
+
+@keyframes introDone {
+	0% { opacity: 1; transform: scale(1); }
+	75% { opacity: 1; transform: scale(2.2); }
+	100% { opacity: 0; transform: scale(2.5); }
+}
+
+@keyframes spin {
+         from { transform: translate(-50%, -50%) rotate(0deg); }
+         to { transform: translate(-50%, -50%) rotate(360deg); }	
+}
+
+@keyframes screenOn {
+		0% {opacity: 0;}
+		30% {opacity: 0;}
+		100% {opacity: 0.7;}
+}
