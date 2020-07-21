@@ -14,10 +14,12 @@ const Socials = (props) => {
 		{id:'Etsy', hover:false, link:'https://www.etsy.com/fr/shop/TarayahWorld'}
 		])
 
-		const handleHover = (test) => (
-				socialsTab.forEach(socials => {
-						if(socials.id === test){socials.hover = !socials.hover}
-				})
+		const handleHover = (index) => (
+				setSocialsTab([
+				...socialsTab.slice(0, index),
+				{...socialsTab[index], hover: !socialsTab[index].hover},
+				...socialsTab.slice(index + 1)
+				])
 		)
 
 		const display = (
@@ -28,19 +30,20 @@ const Socials = (props) => {
 				<div className='infoTitle'>
 				{dataLocal.title}
 				</div>
-				{socialsTab.map(social => (
+				{socialsTab.map((social, index) => (
 						<a key={social.id} href={social.link}  target='_blank' rel="noopener noreferrer">
-						<div className={'socials' + social.id} onMouseEnter={() => handleHover(social.id)} >			
+						<div className={'socials' + social.id} 
+						onMouseEnter={() => handleHover(index)}
+						onMouseLeave={() => handleHover(index)}>			
 						<div className='socialsDot'/>
 						{social.id}
-						<SocialsInfo social={social}/>
+						<SocialsInfo social={social} dataLocal={dataLocal}/>
 						</div>
 						</a>
 				))}
 				</div>
 		)
 
-console.log(socialsTab)
 
 		return (
 				<div>

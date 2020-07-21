@@ -38,6 +38,8 @@ a {
 		top: 71vh;
 		left: 34vw;
 		display: flex;
+		max-height: 2rem;
+		width: 10rem;
 }
 
 .socialsYoutube {
@@ -45,6 +47,8 @@ a {
 		top: 54vh;
 		left: 12vw;
 		display: flex;
+		max-height: 2rem;
+		width: 10rem;
 }
 
 .socialsInstagram {
@@ -52,6 +56,8 @@ a {
 		top: 85vh;
 		left: 4vw;
 		display: flex;
+		max-height: 2rem;
+		width: 10rem;
 }
 
 .socialsTwitter {
@@ -59,6 +65,8 @@ a {
 		top: 92vh;
 		left: 47vw;
 		display: flex;
+		max-height: 2rem;
+		width: 10rem;
 }
 
 .socialsTwitch {
@@ -66,6 +74,8 @@ a {
 		top: 37vh;
 		left: 65vw;
 		display: flex;
+		max-height: 2rem;
+		width: 10rem;
 }
 
 .socialsEtsy {
@@ -73,6 +83,8 @@ a {
 		top: 74vh;
 		left: 70vw;
 		display: flex;
+		max-height: 2rem;
+		width: 10rem;
 }
 
 .socialsDiscord:hover,
@@ -86,12 +98,15 @@ a {
 
 .socialsInfo {
 		display: none;
-		width: 10rem;
-		height: 10rem;
+		min-width: 10rem;
+		min-height: 14rem;
 		transform: translate(-90%,-100%);
 		background-color: black;
 		opacity: 0.7;
-		font-size: 20px
+		font-size: 20px;
+		border-radius: 15%;
+		padding: 10px;
+
 }
 
 /*----------About---------*/
