@@ -4,11 +4,23 @@ const Art = (props) => {
 
 		const dataLocal = props.dataLocal
 
-		const content = (dataLocal.title)
+		const display = (
+				<div>
+						<div className='infoCategory'>
+						{dataLocal.category}
+						</div>
+
+						<div className='infoTitle'>
+						{dataLocal.title}
+						</div>
+
+
+				</div>
+		)
 
 		return (
 				<div>
-						{content}
+						{display}
 				</div>
 		)
 }
