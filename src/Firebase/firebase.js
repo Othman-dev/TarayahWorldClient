@@ -2,7 +2,7 @@ import firebase from 'firebase/app'
 import 'firebase/firestore'
 
  // Your web app's Firebase configuration
-  var firebaseConfig = {
+  const config = {
     apiKey: "AIzaSyDZ8Et5Q5Khk2yMlXhmdEpSkKs43VBmY2Y",
     authDomain: "tarayah-world.firebaseapp.com",
     databaseURL: "https://tarayah-world.firebaseio.com",
@@ -13,6 +13,6 @@ import 'firebase/firestore'
     measurementId: "G-LE93QZYFDR"
   };
   // Initialize Firebase
-  firebase.initializeApp(firebaseConfig);
+  firebase.initializeApp(config);
 
 export default firebase;

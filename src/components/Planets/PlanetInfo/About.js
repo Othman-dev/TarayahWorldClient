@@ -12,9 +12,9 @@ const About = (props) => {
 				<div className='infoTitle'>
 				{dataLocal.title}
 				</div>
-				<div className='aboutContent'>
+				<p className='aboutContent'>
 				{dataLocal.content.replace(/_n/g,"\n")}
-				</div>
+				</p>
 		    </div>
 		)
 

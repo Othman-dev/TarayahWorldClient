@@ -1,5 +1,7 @@
 import React, {useState, useEffect} from 'react';
 import firebase from '../../Firebase/firebase.js';
+import AboutUpdate from './AboutUpdate.js';
+import '../../assets/css/update.css';
 
 //----------firebase extractor
 
@@ -27,12 +29,15 @@ const UpDate = () =>{
 
 		const [selectUpdate, setSelectUpdate] = useState()
 
-		const selection = handleSelection()
-
 		const dataLocal = useData()
 
+		const selection = handleSelection()
+
 		function handleSelection() {
-			return <div>{selectUpdate}</div>
+
+				if(!selectUpdate){return <div>Please select a page to Update</div>}
+				else if(selectUpdate === 'About'){return <AboutUpdate dataLocal={dataLocal}/>}
+				else{return <div>Please select a page to Update</div>}
 		}
 
 		const test = (
