@@ -109,7 +109,7 @@ a {
 
 }
 
-/*----------About---------*/
+/*----------Music---------*/
 
 .musicList {
 		position: absolute;
@@ -117,6 +117,9 @@ a {
 		width: 82%;
 		height: 35px;
 		width: auto;
+}
+
+.songs {
 }
 
 .musicLink {

@@ -1,146 +1,23 @@
-.infoCategory {
-		left: 30%;
-		top: 3%;
-		font-size: 60px; 
+.selectPage {
+		height: 75px;
+		width: 300px;
+		font-size: 40px;
 }
 
-.infoTitle {
-		top: 15%;
-		font-size: 30px;
+.label {
+		display: block;
 }
 
-.textForm{
+.textInput{
 		width: 580px;
 }
 
-.messageForm {
+
+.contentInput {
 		height: 300px;
 		width: 600px;
-		transform: translate(0%, 93%);
 }
 
-/*----------About---------*/
 
-.aboutContent {
-		top: -5%;
-		width: 82%;
-}
 
-/*----------Socials---------*/
-a {
-		text-decoration: none;
-		color: white;
-}
 
-.socialsDot {
-		background-color: black;
-		height: 0.75rem;
-		width: 0.75rem;
-		border-radius: 50%;
-		transform: translate(-100%, 25%)
-}
-
-.socialsDiscord {
-		position: absolute;
-		top: 71vh;
-		left: 34vw;
-		display: flex;
-		max-height: 2rem;
-		width: 10rem;
-}
-
-.socialsYoutube {
-		position: absolute;
-		top: 54vh;
-		left: 12vw;
-		display: flex;
-		max-height: 2rem;
-		width: 10rem;
-}
-
-.socialsInstagram {
-		position: absolute;
-		top: 85vh;
-		left: 4vw;
-		display: flex;
-		max-height: 2rem;
-		width: 10rem;
-}
-
-.socialsTwitter {
-		position: absolute;
-		top: 92vh;
-		left: 47vw;
-		display: flex;
-		max-height: 2rem;
-		width: 10rem;
-}
-
-.socialsTwitch {
-		position: absolute;
-		top: 37vh;
-		left: 65vw;
-		display: flex;
-		max-height: 2rem;
-		width: 10rem;
-}
-
-.socialsEtsy {
-		position: absolute;
-		top: 74vh;
-		left: 70vw;
-		display: flex;
-		max-height: 2rem;
-		width: 10rem;
-}
-
-.socialsDiscord:hover,
-.socialsInstagram:hover,
-.socialsYoutube:hover,
-.socialsTwitter:hover,
-.socialsTwitch:hover,
-.socialsEtsy:hover {
-		font-size: 30px;
-}
-
-.socialsInfo {
-		display: none;
-		min-width: 10rem;
-		min-height: 14rem;
-		transform: translate(-90%,-100%);
-		background-color: black;
-		opacity: 0.7;
-		font-size: 20px;
-		border-radius: 15%;
-		padding: 10px;
-
-}
-
-/*----------About---------*/
-
-.musicList {
-		position: absolute;
-		top: 25%;
-		width: 82%;
-		height: 35px;
-		width: auto;
-}
-
-.musicLink {
-		position: absolute;
-		top: 25%;
-		left: 40%;
-		width: 82%;
-		list-style-type: none;
-}
-
-.musicLinkIcon{
-		height: 35px;
-		width: 35px;
-}
-
-/*---------Others----------*/
-
-.flex {
-		display: flex;
-}

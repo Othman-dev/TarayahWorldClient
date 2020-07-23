@@ -44,7 +44,7 @@ const UpDate = () =>{
 				<div>
 				Bonjour Tarayah, ce site web a besoin de toi pour etre mis a jour!!!<br/>
 				Tu n'as qu'a sélectionné une page à modifier.<br/>
-				<select onChange={(e) => {setSelectUpdate(e.target.value)}}>
+				<select className='selectPage' onChange={(e) => {setSelectUpdate(e.target.value)}}>
 						<option></option>
 						<option>News</option>
 						<option disabled>----------</option>
@@ -53,7 +53,6 @@ const UpDate = () =>{
 						<option disabled>----------</option>
 						<option>About</option>
 						<option>Socials</option>
-						<option>Contact</option>
 				</select><br/>
 				{selection}
 				</div>

@@ -5,45 +5,31 @@ const AboutUpdate = (props) => {
 
 		const [dataLocal, setDataLocal] = useState(props.dataLocal.filter(data => data.category === 'About').pop())
 
-		function handleContentChange(event) {
-				setDataLocal({...dataLocal, content:event.target.value})
-		}
-
-		function handleTitleChange(event) {
-				setDataLocal({...dataLocal, title:event.target.value})
+		function handleChange(event) {
+				setDataLocal({...dataLocal, [event.target.name]:event.target.value})
 		}
 		
 		function handleSubmit(event) {
 				alert('site updated')
-				firebase.firestore().collection('planets').doc('3').set(dataLocal)
+				firebase.firestore().collection('planets').doc('bW7m4GieFYVa6scwoE6i').set(dataLocal)
 				event.preventDefault()
 		}
 
 		const display = (                                       
 				<div>
-						<div className='infoCategory'>
-						{dataLocal.category}
-						</div>                                          
 				<form onSubmit={handleSubmit}>
-						<div className='infoTitle'>                                              
-						<label>Title :
-						<input type='name' className='textForm' 
-						value={dataLocal.title.toString()}
-						onChange={handleTitleChange}/>
-						</label>
-						</div>
-
-						<div className='aboutContent'>
-						<label>Content :
-						<textarea className='messageForm' 
-						value={dataLocal.content.replace(/_n/g,"\n").toString()} 
-						onChange={handleContentChange}/>
-						</label>
-						<button className='aboutSubmit' type='submit'>Submit</button>
-						</div>
+						<label className='label'>Title :</label>
+						<input type='text' name='title' className='textInput' 
+						defaultValue={dataLocal.title}
+						onChange={handleChange}/>
+						<label className='label'>Content :</label>
+						<textarea name='content' className='contentInput' 
+						defaultValue={dataLocal.content} 
+						onChange={handleChange}/>
+						<input type='submit' value='Submit'/>
 				</form>
 				</div>                                                                                 )                
-console.log(dataLocal)
+	console.log(dataLocal)	
 		return (
 		<div>
 				{display}
