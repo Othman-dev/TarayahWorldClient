@@ -12,12 +12,24 @@
 		width: 580px;
 }
 
-
 .contentInput {
 		height: 300px;
 		width: 600px;
 }
 
+/*----------Music---------*/
 
+.songList {
+		position: absolute;
+		left: 0;
+		top: 20%;
+		max-width: 45vw;
+}
 
+.linkList {
+		position: absolute;
+		left: 50%;
+		top: 20%;
+		max-width: 45vw;
+}
 

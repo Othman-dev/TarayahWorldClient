@@ -1,4 +1,3 @@
-import React from 'react';
 
 	const PlanetReducer = (planetsTab, action) => {
                 switch(action.type){

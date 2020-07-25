@@ -14,17 +14,17 @@ const Music = (props) => {
 						<div className='infoTitle'>
 						{dataLocal.title}
 						</div>
-
+				
 						<ul className='musicList'>
-						{Object.keys(dataLocal.songs).map((song, index) => (
-						<li key={index}>{song}</li>
-						))}
+						{dataLocal.songs.map((song, index) => (
+						<li key={index} className='songs'>
+						{song.songTitle}</li>))}
 						</ul>
-
+				
 						<ul className='musicLink'>
-						{Object.values(dataLocal.songs).map((link, index) => (
-						<li key={index} classNames='songs'>
-						<a href={link} target='_blank' rel="noopener noreferrer" className='musicLinkIcon'>
+						{dataLocal.songs.map((song, index) => (
+						<li key={index} className='songs'>
+						<a href={song.songLink} target='_blank' rel="noopener noreferrer" className='musicLinkIcon'>
 						<img src={Youtube} alt='youtube' className='musicLinkIcon'/>
 						</a>
 						</li>
@@ -33,6 +33,7 @@ const Music = (props) => {
 
 				</div>
 		)
+		
 		return (
 				<div>
 						{display}

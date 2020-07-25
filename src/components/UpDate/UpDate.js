@@ -1,6 +1,7 @@
 import React, {useState, useEffect} from 'react';
 import firebase from '../../Firebase/firebase.js';
 import AboutUpdate from './AboutUpdate.js';
+import MusicUpdate from './MusicUpdate.js';
 import '../../assets/css/update.css';
 
 //----------firebase extractor
@@ -37,6 +38,7 @@ const UpDate = () =>{
 
 				if(!selectUpdate){return <div>Please select a page to Update</div>}
 				else if(selectUpdate === 'About'){return <AboutUpdate dataLocal={dataLocal}/>}
+				else if(selectUpdate === 'Music'){return <MusicUpdate dataLocal={dataLocal}/>}
 				else{return <div>Please select a page to Update</div>}
 		}
 

@@ -115,17 +115,18 @@ a {
 		position: absolute;
 		top: 25%;
 		width: 82%;
-		height: 35px;
 		width: auto;
 }
 
 .songs {
+		height: 38.5px;
+		width: 400px;
 }
 
 .musicLink {
 		position: absolute;
 		top: 25%;
-		left: 40%;
+		left: 35%;
 		width: 82%;
 		list-style-type: none;
 }
