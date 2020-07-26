@@ -19,6 +19,32 @@
 		width: 82%;
 }
 
+
+/*----------Contact---------*/
+
+.email {
+		position: absolute;
+		top: 25%;
+		width: 40%;
+}
+
+.formDiv {
+		position: absolute;
+		top: 25%;
+		left: 35%;
+		height: 60%;
+		width: 50%;
+}
+
+.formInput {
+		width: 50%;
+}
+
+.formMessage {
+		width: 80%;
+		height: 25rem;
+}
+
 /*----------Socials---------*/
 a {
 		text-decoration: none;

@@ -46,6 +46,7 @@ const MusicUpdate = (props) => {
 						<button className='submitButton' onClick={handleSubmit}>Submit</button>
 
 						<br/>
+						<br/>
 						<button onClick={handleAddButton}>Add new song</button>
 						
 						<ul className='songList'>

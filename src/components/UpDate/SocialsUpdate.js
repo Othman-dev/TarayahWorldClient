@@ -1,9 +1,9 @@
 import React, {useState} from 'react';
 import firebase from '../../Firebase/firebase.js';
 
-const AboutUpdate = (props) => {
+const SocialsUpdate = (props) => {
 
-		const [dataLocal, setDataLocal] = useState(props.dataLocal.filter(data => data.category === 'About').pop())
+		const [dataLocal, setDataLocal] = useState(props.dataLocal.filter(data => data.category === 'Socials').pop())
 
 		function handleChange(event) {
 				setDataLocal({...dataLocal, [event.target.name]:event.target.value})
@@ -11,22 +11,62 @@ const AboutUpdate = (props) => {
 		
 		function handleSubmit(event) {
 				alert('site updated')
-				firebase.firestore().collection('planets').doc('bW7m4GieFYVa6scwoE6i').set(dataLocal)
+				firebase.firestore().collection('planets').doc('D9eN3Jf1G59ezoWqcBCY').set(dataLocal)
 				event.preventDefault()
 		}
 
 		const display = (                                       
 				<div>
-				<form onSubmit={handleSubmit}>
-						<label className='label'>Title :</label>
+				<form>
+						<label className='label'>Title :
 						<input type='text' name='title' className='textInput' 
 						defaultValue={dataLocal.title}
 						onChange={handleChange}/>
-						<label className='label'>Content :</label>
-						<textarea name='content' className='contentInput' 
-						defaultValue={dataLocal.content} 
+						<input type='submit' value='Submit' onClick={handleSubmit}/>
+						</label>
+						<br/>
+
+						<div className='divLabel'>
+						<label className='label'>Discord :</label>
+						<textarea rows='6' name='label infoDiscord'  
+						defaultValue={dataLocal.infoDiscord} 
 						onChange={handleChange}/>
-						<input type='submit' value='Submit'/>
+						</div>
+
+						<div className='divLabel'>
+						<label className='label'>Youtube :</label>
+						<textarea rows='6' name='infoYoutube'  
+						defaultValue={dataLocal.infoYoutube} 
+						onChange={handleChange}/>
+						</div>
+
+						<div className='divLabel'>
+						<label className='label'>Twitter :</label>
+						<textarea rows='6' name='infoTwitter'  
+						defaultValue={dataLocal.infoTwitter} 
+						onChange={handleChange}/>
+						</div>
+						
+						<div className='divLabel'>
+						<label className='label'>Twitch :</label>
+						<textarea rows='6' name='infoTwitch'  
+						defaultValue={dataLocal.infoTwitch} 
+						onChange={handleChange}/>
+						</div>
+
+						<div className='divLabel'>
+						<label className='label'>Instagram :</label>
+						<textarea rows='6' name='infoInstagram'  
+						defaultValue={dataLocal.infoInstagram} 
+						onChange={handleChange}/>
+						</div>
+						
+						<div className='divLabel'>
+						<label className='label'>Etsy :</label>
+						<textarea rows='6' name='infoEtsy'  
+						defaultValue={dataLocal.infoEtsy} 
+						onChange={handleChange}/>
+						</div>
 				</form>
 				</div>                                                                                 )                
 	console.log(dataLocal)	
@@ -36,4 +76,4 @@ const AboutUpdate = (props) => {
 		</div>
 		)
 }
-export default AboutUpdate;
+export default SocialsUpdate;

@@ -1,7 +1,10 @@
 import React, {useState, useEffect} from 'react';
 import firebase from '../../Firebase/firebase.js';
 import AboutUpdate from './AboutUpdate.js';
+import ArtUpdate from './ArtUpdate.js';
 import MusicUpdate from './MusicUpdate.js';
+import NewsUpdate from './NewsUpdate.js';
+import SocialsUpdate from './SocialsUpdate.js';
 import '../../assets/css/update.css';
 
 //----------firebase extractor
@@ -38,7 +41,10 @@ const UpDate = () =>{
 
 				if(!selectUpdate){return <div>Please select a page to Update</div>}
 				else if(selectUpdate === 'About'){return <AboutUpdate dataLocal={dataLocal}/>}
+				else if(selectUpdate === 'Art'){return <ArtUpdate dataLocal={dataLocal}/>}
 				else if(selectUpdate === 'Music'){return <MusicUpdate dataLocal={dataLocal}/>}
+				else if(selectUpdate === 'News'){return <NewsUpdate dataLocal={dataLocal}/>}
+				else if(selectUpdate === 'Socials'){return <SocialsUpdate dataLocal={dataLocal}/>}
 				else{return <div>Please select a page to Update</div>}
 		}
 
@@ -55,7 +61,9 @@ const UpDate = () =>{
 						<option disabled>----------</option>
 						<option>About</option>
 						<option>Socials</option>
-				</select><br/>
+				</select>
+				<br/>
+				<br/>
 				{selection}
 				</div>
 		)

@@ -8,6 +8,11 @@
 		display: block;
 }
 
+.divLabel {
+		float: left;
+		width: 35%;
+}
+
 .textInput{
 		width: 580px;
 }
@@ -22,14 +27,14 @@
 .songList {
 		position: absolute;
 		left: 0;
-		top: 20%;
+		top: 24%;
 		max-width: 45vw;
 }
 
 .linkList {
 		position: absolute;
 		left: 50%;
-		top: 20%;
+		top: 24%;
 		max-width: 45vw;
 }
 

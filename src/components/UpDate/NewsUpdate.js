@@ -1,9 +1,9 @@
 import React, {useState} from 'react';
 import firebase from '../../Firebase/firebase.js';
 
-const AboutUpdate = (props) => {
+const NewsUpdate = (props) => {
 
-		const [dataLocal, setDataLocal] = useState(props.dataLocal.filter(data => data.category === 'About').pop())
+		const [dataLocal, setDataLocal] = useState(props.dataLocal.filter(data => data.category === 'News').pop())
 
 		function handleChange(event) {
 				setDataLocal({...dataLocal, [event.target.name]:event.target.value})
@@ -11,22 +11,24 @@ const AboutUpdate = (props) => {
 		
 		function handleSubmit(event) {
 				alert('site updated')
-				firebase.firestore().collection('planets').doc('bW7m4GieFYVa6scwoE6i').set(dataLocal)
+				firebase.firestore().collection('planets').doc('9owHLfMx8FNN1Hczuh7O').set(dataLocal)
 				event.preventDefault()
 		}
 
 		const display = (                                       
 				<div>
-				<form onSubmit={handleSubmit}>
+				<form>
 						<label className='label'>Title :</label>
 						<input type='text' name='title' className='textInput' 
 						defaultValue={dataLocal.title}
 						onChange={handleChange}/>
+						<input type='submit' value='Submit' onClick={handleSubmit}/>
+						<br/>
+						<br/>
 						<label className='label'>Content :</label>
 						<textarea name='content' className='contentInput' 
 						defaultValue={dataLocal.content} 
 						onChange={handleChange}/>
-						<input type='submit' value='Submit'/>
 				</form>
 				</div>                                                                                 )                
 	console.log(dataLocal)	
@@ -36,4 +38,4 @@ const AboutUpdate = (props) => {
 		</div>
 		)
 }
-export default AboutUpdate;
+export default NewsUpdate;

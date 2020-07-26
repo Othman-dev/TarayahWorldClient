@@ -230,7 +230,7 @@
 	width: 6rem;
 	transform: translate(-50%, -50%);
 	border-radius: 50%;
-	transition: all 1s ease;
+	transition: all 0.75s ease;
 }
 
 .planetText {
@@ -329,7 +329,7 @@
 	left: 69vw;
 	padding: 5% 5%;
 	border-radius: 15% / 50%;
-	animation: screenOn 2.5s;
+	animation: screenOn 1.75s;
 	overflow: hidden;
 }
 
