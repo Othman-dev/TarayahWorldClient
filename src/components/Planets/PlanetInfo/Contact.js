@@ -8,11 +8,18 @@ const Contact = (props) => {
 				name:'',
 				email:'',
 				subject:'',
-				message:''
+				content:'',
+				sent:null,
+				disabled:false
 		})
 
 		function handleChange(event) {
 				setMessage({...message, [event.target.name]:event.target.value})
+		}
+
+		function handleSubmit(event) {
+				event.preventDefault()
+				setMessage({...message, disabled:true, sent:true})
 		}
 
 		const display = (
@@ -39,21 +46,26 @@ const Contact = (props) => {
 
 		const messageForm = (
 				<div className='formDiv'>
-						<form>
-						<input className='formInput' type='text' name='name' defaultValue='name' onChange={handleChange}/>
+						<form onSubmit={handleSubmit}>
+						<input className='formInput' type='text' name='name' defaultValue='name' onChange={handleChange} required/>
 						<br/>
-						<input className='formInput' type='email' name='email' defaultValue='email adress' onChange={handleChange}/>
-						<br/>
-						<br/>
-						<input className='formInput'type='text' name='subject' defaultValue='the subject of your message' onChange={handleChange}/>
-						<br/>
-						<textarea className='formMessage' name='message' defaultValue='you can type you message here' onChange={handleChange}/>
+						<input className='formInput' type='email' name='email' defaultValue='email@dress' onChange={handleChange} required/>
 						<br/>
 						<br/>
-						<button>Submit</button>
+						<input className='formInput'type='text' name='subject' defaultValue='the subject of your message' onChange={handleChange} required/>
+						<br/>
+						<textarea className='formMessage' name='content' defaultValue='you can type you message here' onChange={handleChange} required/>
+						<br/>
+						<br/>
+						<button type='submit' disabled={message.disabled}>Submit</button>
+						<div className={message.sent ? 'sentTrue' :'sentFalse'}>
+						{message.sent === true && 'message sent'}
+						{message.sent === false && 'message not sent'}
+						</div>  
 						</form>
 				</div>
 		)
+		console.log(message)
 		return (
 				<div>
 						{display}
