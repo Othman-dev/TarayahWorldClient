@@ -11,6 +11,90 @@
 		font-size: 30px;
 }
 
+/*----------Art----------*/
+
+.previous {
+		position: absolute;
+		top: 55%;
+		left: 10%;
+		transform: translate(0, -50%);
+		height: 3rem;
+		width: 3rem;
+		border-radius: 50%;
+		font-size: 2rem;
+		z-index: 1;
+}
+
+.next {
+		position: absolute;
+		top: 55%;
+		right: 17%;
+		transform: translate(50%, -50%);
+		height: 3rem;
+		width: 3rem;
+		border-radius: 50%;
+		font-size: 2rem;
+		z-index: 1;
+}
+
+.carouselContainer {
+		position: absolute;
+		top: 23%;
+		left: 15%;
+		height: 40rem;
+		width: 60rem;
+		overflow: hidden;
+}
+
+.cardsContainer {
+		position: absolute;
+		display: flex;
+		flex-direction: row;
+		height: 40rem;
+		width: fit-content;
+}
+
+.transition {
+		transition: 0.5s;
+}
+
+.cards1{
+		transform: translate(-60rem,0);		
+}
+
+.cards2{
+		transform: translate(-120rem,0);
+}
+
+.cardsEnd{
+		transform: translate(-180rem,0);
+}
+
+.cards{
+		height: 40rem;
+		width: 60rem;
+}
+
+.cardText {
+		display: flex;
+		text-align: center;
+		align-items: center;
+}
+
+.gallery {
+		float: left;
+		width: 33%;
+		height: 20rem;
+}
+
+.painting {
+		display: flex;
+		height: 90%;
+		width: 90% ;
+		top: 15%;
+		left: 5%;
+}
+
 /*----------About---------*/
 
 .aboutContent {

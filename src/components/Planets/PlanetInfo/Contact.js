@@ -1,4 +1,5 @@
 import React, {useState} from 'react';
+import Axios from 'axios';
 
 const Contact = (props) => {
 
@@ -19,7 +20,32 @@ const Contact = (props) => {
 
 		function handleSubmit(event) {
 				event.preventDefault()
-				setMessage({...message, disabled:true, sent:true})
+
+				Axios.post('http://localhost:3030/api/email', message)
+				.then(res => {
+						
+						if(res.data.success) {
+								let temp = message
+								temp.disabled=true
+								temp.sent=true
+								console.log(temp+'success')
+								setMessage(temp)
+						}else{
+								let temp = message
+								temp.disabled=false
+								temp.sent=false
+								console.log(temp+'else')
+								setMessage(temp)
+						}
+				})
+				.catch(err => {
+								let temp = message
+								temp.disabled=false
+								temp.sent=false
+								console.log(err)
+								setMessage(temp)
+				})
+						console.log(message)
 		}
 
 		const display = (
@@ -65,7 +91,6 @@ const Contact = (props) => {
 						</form>
 				</div>
 		)
-		console.log(message)
 		return (
 				<div>
 						{display}

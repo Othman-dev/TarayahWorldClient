@@ -1,4 +1,4 @@
-import React, {useEffect, useState} from 'react';
+import React, {useEffect, useState, memo} from 'react';
 import classNames from 'classnames';
 import firebase from '../../Firebase/firebase.js';
 import News from './PlanetInfo/News.js';
@@ -64,4 +64,4 @@ const PlanetInfo = (props) => {
 		</div>
 		)
 }
-export default PlanetInfo;
+export default memo(PlanetInfo);
