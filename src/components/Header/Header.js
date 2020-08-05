@@ -5,22 +5,20 @@ import Twitter from '../../assets/pics/twitter.svg';
 import Twitch from '../../assets/pics/twitch.png';
 import Discord from '../../assets/pics/discord.png';
 import Etsy from '../../assets/pics/etsy.png';
-import Tarayah from '../../assets/pics/Tarayah.png';
-import World from '../../assets/pics/World.png';
+import TarayahWorld from '../../assets/pics/TarayahWorld.png';
 
 const Header = () => {
 	
 	const logo = (
 
 		<div className='header'>
-			<img src={Tarayah} alt='Tarayah' className='tarayahHeader'/>
-			<img src={World} alt='World' className='worldHeader'/>
+			<img src={TarayahWorld} alt='TarayahWorld' className='tarayahWorldHeader'/>
 		</div>
 	)
 
 	const socialsIcon = (
 
-		<div>
+		<div className='headerIcon'>
 		<a href='https://www.youtube.com/channel/UCsTBtbUxAVwsLF8devi7aUA?view_as=subscriber' target='_blank' rel="noopener noreferrer" className='socialsIcon'>
 		<img src={Youtube} alt='youtube' className='socialsIcon'/>
 		</a>

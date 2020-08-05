@@ -4,6 +4,13 @@
 		font-size: 40px;
 }
 
+.signOut {
+		height: 5vh;
+		width: 7vw;
+		margin-left: 3vw;
+		font-size: 2vh;
+}
+
 .label {
 		display: block;
 }

@@ -25,7 +25,7 @@ const NavBar = (props) => {
 		<div className='about' onClick={() => handleClick('about')}>ABOUT</div>
 		<div className='art' onClick={() => handleClick('art')}>ART</div>
 		<div className='music' onClick={() => handleClick('music')}>MUSIC</div>
-		<div className='contact' onClick={() => handleClick('contact')}>CONTACT PRO</div>
+		<div className='contact' onClick={() => handleClick('contact')}>CONTACT</div>
 		
 		</div>
 

@@ -3,7 +3,7 @@ import PlanetsReducer from './PlanetsReducer.js'
 
 export const PlanetsContext = createContext();
 
-	const PlanetsContextProvider = (props) => {
+const PlanetsContextProvider = (props) => {
 
 	const [planetsTab, dispatch] = useReducer(PlanetsReducer, [
                                 {id:'news', planetToggle:false, infoToggle:false, classes:'planet1'},

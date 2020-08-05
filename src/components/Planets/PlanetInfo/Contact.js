@@ -23,29 +23,24 @@ const Contact = (props) => {
 
 				Axios.post('http://localhost:3030/api/email', message)
 				.then(res => {
-						
 						if(res.data.success) {
-								let temp = message
-								temp.disabled=true
-								temp.sent=true
-								console.log(temp+'success')
-								setMessage(temp)
+								setMessage({...message,
+								sent:true,
+								disabled:true
+								})
 						}else{
-								let temp = message
-								temp.disabled=false
-								temp.sent=false
-								console.log(temp+'else')
-								setMessage(temp)
+								setMessage({...message,
+								sent:false,
+								disabled:false
+								})
 						}
 				})
 				.catch(err => {
-								let temp = message
-								temp.disabled=false
-								temp.sent=false
-								console.log(err)
-								setMessage(temp)
+								setMessage({...message,
+								sent:false,
+								disabled:false
+								})
 				})
-						console.log(message)
 		}
 
 		const display = (
@@ -80,7 +75,7 @@ const Contact = (props) => {
 						<br/>
 						<input className='formInput'type='text' name='subject' defaultValue='the subject of your message' onChange={handleChange} required/>
 						<br/>
-						<textarea className='formMessage' name='content' defaultValue='you can type you message here' onChange={handleChange} required/>
+						<textarea rows='15' className='formMessage' name='content' defaultValue='you can type you message here' onChange={handleChange} required/>
 						<br/>
 						<br/>
 						<button type='submit' disabled={message.disabled}>Submit</button>

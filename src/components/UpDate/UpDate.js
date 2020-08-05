@@ -14,15 +14,14 @@ function useData() {
 		const [data, setData] = useState([])
 
 		useEffect(() => {
-				const unsuscribe = firebase.firestore().collection('planets')
+				const fetchData = firebase.firestore().collection('planets')
 				.onSnapshot((snapshot) => {
 						const newData = snapshot.docs.map((doc) => ({
-						id: doc.id,
 						...doc.data()
 						}))
 				setData(newData)
 				})
-				return () => unsuscribe()
+				return () => fetchData()
 		}, [])
 		return data
 }
@@ -62,6 +61,7 @@ const UpDate = () =>{
 						<option>About</option>
 						<option>Socials</option>
 				</select>
+				<button className='signOut' onClick={() => firebase.auth().signOut()}>Sign out</button>
 				<br/>
 				<br/>
 				{selection}

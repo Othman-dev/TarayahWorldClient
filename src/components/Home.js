@@ -6,9 +6,8 @@ import PlanetsDisplay from './Planets/PlanetsDisplay.js';
 import PlanetsContextProvider from '../context/PlanetsContext.js';
 import NavBar from './NavBar/NavBar.js';
 
-
 function Home() {
-	
+
 //----------Intro logic
 
 	const [introScreen, setIntroScreen] = useState('intro')
@@ -52,7 +51,7 @@ function Home() {
 
 	return (
 		<div className='mainTheme'>
-
+			
 			<Intro introScreen={introScreen} introTimeout={introTimeout}/>
 		
 			<div className={introEffect}>

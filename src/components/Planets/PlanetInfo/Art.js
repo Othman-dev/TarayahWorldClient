@@ -24,7 +24,7 @@ const Art = (props) => {
 						setTimeout(() => {
 								setTransition(false)
 								setCardNumber(2)
-						}, 502)
+						}, 302)
 				}
 				setTransition(true)
 				setCardNumber(cardNumber - 1)
@@ -36,7 +36,7 @@ const Art = (props) => {
 						setTimeout(() => {
 								setTransition(false)
 								setCardNumber(1)
-						}, 502)
+						}, 302)
 				}
 				setTransition(true)
 				setCardNumber(cardNumber + 1)

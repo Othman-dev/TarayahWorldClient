@@ -25,6 +25,12 @@ const NewsUpdate = (props) => {
 						<input type='submit' value='Submit' onClick={handleSubmit}/>
 						<br/>
 						<br/>
+						<label className='label'>Youtube :</label>
+						<input type='text' name='link' className='textInput'
+						defaultValue={dataLocal.link}
+						onChange={handleChange}/>
+						<br/>
+						<br/>
 						<label className='label'>Content :</label>
 						<textarea name='content' className='contentInput' 
 						defaultValue={dataLocal.content} 

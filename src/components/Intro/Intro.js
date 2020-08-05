@@ -17,7 +17,7 @@ const Intro = (props) => {
 	const galaxy = (
 	
 		<div>
-		    <video autoPlay muted loop id="myVideo">
+		    <video autoPlay muted loop id="myVideoIntro">
 				<source src={IntroUniverse} type="video/mp4"/>
 		Your browser does not support the intro video
 		    </video>

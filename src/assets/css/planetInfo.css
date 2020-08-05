@@ -1,14 +1,15 @@
 .infoCategory {
 		position: fixed;
-		left: 30%;
-		top: 3%;
-		font-size: 60px; 
+		left: 32%;
+		top: 26%;
+		font-size: 7vh; 
 }
 
 .infoTitle {
 		position: absolute;
-		top: 15%;
-		font-size: 30px;
+		top: 35%;
+		left: 5%;
+		font-size: 4vh;
 }
 
 /*----------Art----------*/
@@ -16,33 +17,33 @@
 .previous {
 		position: absolute;
 		top: 55%;
-		left: 10%;
+		left: 8%;
 		transform: translate(0, -50%);
-		height: 3rem;
-		width: 3rem;
+		height: 5vh;
+		width: 5vh;
 		border-radius: 50%;
-		font-size: 2rem;
+		font-size: 3vh;
 		z-index: 1;
 }
 
 .next {
 		position: absolute;
 		top: 55%;
-		right: 17%;
+		right: 33%;
 		transform: translate(50%, -50%);
-		height: 3rem;
-		width: 3rem;
+		height: 5vh;
+		width: 5vh;
 		border-radius: 50%;
-		font-size: 2rem;
+		font-size: 3vh;
 		z-index: 1;
 }
 
 .carouselContainer {
 		position: absolute;
-		top: 23%;
-		left: 15%;
-		height: 40rem;
-		width: 60rem;
+		top: 39%;
+		left: 12%;
+		height: 62vh;
+		width: 105vh;
 		overflow: hidden;
 }
 
@@ -50,57 +51,64 @@
 		position: absolute;
 		display: flex;
 		flex-direction: row;
-		height: 40rem;
+		height: 62vh;
 		width: fit-content;
 }
 
 .transition {
-		transition: 0.5s;
+		transition: 0.3s;
 }
 
 .cards1{
-		transform: translate(-60rem,0);		
+		transform: translate(-105vh,0);		
 }
 
 .cards2{
-		transform: translate(-120rem,0);
+		transform: translate(-210vh,0);
 }
 
 .cardsEnd{
-		transform: translate(-180rem,0);
+		transform: translate(-315vh,0);
 }
 
 .cards{
-		height: 40rem;
-		width: 60rem;
+		height: 62vh;
+		width: 105vh;
 }
 
 .cardText {
 		display: flex;
 		text-align: center;
 		align-items: center;
+		font-size: 1.8vh;
 }
 
 .gallery {
 		float: left;
-		width: 33%;
-		height: 20rem;
+		width: 33.3333333%;
+		height: 31vh;
+}
+
+.exemplePaint {
+		width: 40%;
 }
 
 .painting {
-		display: flex;
-		height: 90%;
-		width: 90% ;
-		top: 15%;
-		left: 5%;
+		display: block;
+		margin: auto;
+		margin-top:1vh;
+		height: 95%;
+		width: 95% ;
 }
 
 /*----------About---------*/
 
 .aboutContent {
 		position: absolute;
-		top: 25%;
-		width: 82%;
+		top: 43%;
+		left: 5%;
+		width: 65%;
+		font-size: 1.9vh;
 }
 
 
@@ -108,25 +116,29 @@
 
 .email {
 		position: absolute;
-		top: 25%;
+		top: 45%;
+		left: 5%;
 		width: 40%;
+		font-size: 1.9vh
 }
 
 .formDiv {
 		position: absolute;
-		top: 25%;
-		left: 35%;
+		top: 40%;
+		left: 30%;
 		height: 60%;
 		width: 50%;
+		font-size: 1.9vh
 }
 
 .formInput {
 		width: 50%;
+		font-size: 1.9vh
 }
 
 .formMessage {
 		width: 80%;
-		height: 25rem;
+		font-size: 1.9vh
 }
 
 .sentFalse {
@@ -137,72 +149,121 @@
 		color: green;
 }
 
+/*----------News----------*/
+
+.newsYoutube {
+		position: absolute;
+		top: 40%;
+		left: 12%;
+		width: 35.6%;
+		height: 20%;
+		background-color: gray;
+}
+
+.youtubeVideo {
+		position: absolute;
+		top:0;
+		left:0;
+		width: 100%;
+		height: 100%;
+}
+
+.newsPaint { 
+         position: absolute;
+         top: 39%;                  
+         left: 50%;                 
+         height: 22%;             
+         width: 17.5%;                    
+}           
+
+.newsImg {
+		height: 100%;
+		width: 100%;
+}
+
+.newsContent {
+		padding: 0 5% 0 5%;
+		opacity: 0.8;
+		position: absolute;
+		top: 63%;
+		left: 10%;
+		height: 6%;
+		width: 50%;
+		display: flex;
+		align-items: center;
+		text-align: center;
+		background-color: black;
+		border-radius: 5% / 50%;
+		font-size: 1.9vh;
+}
+
 /*----------Socials---------*/
 a {
 		text-decoration: none;
 		color: white;
+		font-size: 2vh;
 }
 
 .socialsDot {
 		background-color: black;
-		height: 0.75rem;
-		width: 0.75rem;
+		height: 1.5vh;
+		width: 1.5vh;
 		border-radius: 50%;
 		transform: translate(-100%, 25%)
 }
 
 .socialsDiscord {
 		position: absolute;
-		top: 71vh;
-		left: 34vw;
+		top: 60.7%;
+		left: 45%;
 		display: flex;
-		max-height: 2rem;
-		width: 10rem;
+		max-height: 3%;
+		width: 8%;
 }
 
 .socialsYoutube {
 		position: absolute;
-		top: 54vh;
-		left: 12vw;
+		top: 51%;
+		left: 12.5%;
 		display: flex;
-		max-height: 2rem;
-		width: 10rem;
+		max-height: 3%;
+		width: 8%;
 }
 
 .socialsInstagram {
 		position: absolute;
-		top: 85vh;
-		left: 4vw;
+		top: 71%;
+		left: 53%;
 		display: flex;
-		max-height: 2rem;
-		width: 10rem;
+		max-height: 3%;
+		width: 8%;
 }
 
 .socialsTwitter {
 		position: absolute;
-		top: 92vh;
-		left: 47vw;
+		top: 55%;
+		left: 4%;
 		display: flex;
-		max-height: 2rem;
-		width: 10rem;
+		max-height: 3%;
+		width: 8%;
 }
 
 .socialsTwitch {
 		position: absolute;
-		top: 37vh;
-		left: 65vw;
+		top: 65%;
+		left: 25%;
 		display: flex;
-		max-height: 2rem;
-		width: 10rem;
+		max-height: 3%;
+		width: 8%;
 }
 
 .socialsEtsy {
 		position: absolute;
-		top: 74vh;
-		left: 70vw;
+		top: 70%;
+		left: 7%;
 		display: flex;
-		max-height: 2rem;
-		width: 10rem;
+		max-height: 3%;
+		width: 8%;
 }
 
 .socialsDiscord:hover,
@@ -211,19 +272,19 @@ a {
 .socialsTwitter:hover,
 .socialsTwitch:hover,
 .socialsEtsy:hover {
-		font-size: 30px;
+		font-size: 4vh;
 }
 
 .socialsInfo {
 		display: none;
-		min-width: 10rem;
-		min-height: 14rem;
+		min-width: 17vh;
+		min-height: 25vh;
 		transform: translate(-90%,-100%);
 		background-color: black;
 		opacity: 0.7;
-		font-size: 20px;
+		font-size: 2.3vh;
 		border-radius: 15%;
-		padding: 10px;
+		padding: 1vh;
 
 }
 
@@ -231,27 +292,22 @@ a {
 
 .musicList {
 		position: absolute;
-		top: 25%;
-		width: 82%;
+		top: 43%;
+		left: 5%;
 		width: auto;
 }
 
 .songs {
-		height: 38.5px;
-		width: 400px;
-}
-
-.musicLink {
-		position: absolute;
-		top: 25%;
-		left: 35%;
-		width: 82%;
-		list-style-type: none;
+		padding-bottom: 2%;
+		width: 150%;
+		font-size: 1.9vh;
 }
 
 .musicLinkIcon{
-		height: 35px;
-		width: 35px;
+		padding-left: 5%;
+		transform: translate(0, 40%);
+		height: 3.5vh;
+		width: 3.5vh;
 }
 
 /*---------Others----------*/

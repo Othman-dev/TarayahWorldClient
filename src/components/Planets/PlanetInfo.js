@@ -16,15 +16,14 @@ function useData() {
 		const [data, setData] = useState([])
 
 		useEffect(() => {
-				const unsuscribe = firebase.firestore().collection('planets')
+				const fetchData = firebase.firestore().collection('planets')
 				.onSnapshot((snapshot) => {
 						const newData = snapshot.docs.map((doc) => ({
-						id: doc.id,
 						...doc.data()
 						}))
 				setData(newData)
 				})
-				return () => unsuscribe()
+				return () => fetchData()
 		}, [])
 		return data
 }
@@ -41,7 +40,7 @@ const PlanetInfo = (props) => {
 		'screen',
 		{flex:planet.infoToggle},
 		{screenOpacity:planet.infoToggle},
-		{screenNoBG:planet.id === 'socials' ? true : false}
+		{screenNoBG:(planet.id === 'socials' || planet.id ==='news' )}
 	))
 
 		function onScreenHandle() {
