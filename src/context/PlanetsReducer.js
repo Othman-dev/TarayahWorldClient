@@ -1,5 +1,4 @@
-
-	const PlanetReducer = (planetsTab, action) => {
+const PlanetReducer = (planetsTab, action) => {
                 switch(action.type){
                         case 'switchPlanetToggle':
                                 return [

@@ -1,11 +1,11 @@
 import React, {memo} from 'react';
 import classNames from 'classnames';
-import Painting1 from '../../../assets/pics/painting1.JPG';
-import Painting2 from '../../../assets/pics/painting2.JPG';
-import Painting3 from '../../../assets/pics/painting3.JPG';
-import Painting4 from '../../../assets/pics/painting4.JPG';
-import Painting5 from '../../../assets/pics/painting5.JPG';
-import Painting6 from '../../../assets/pics/painting6.JPG';
+import Painting1 from '../../../assets/pics/painting1.jpg';
+import Painting2 from '../../../assets/pics/painting2.jpg';
+import Painting3 from '../../../assets/pics/painting3.jpg';
+import Painting4 from '../../../assets/pics/painting4.jpg';
+import Painting5 from '../../../assets/pics/painting5.jpg';
+import Painting6 from '../../../assets/pics/painting6.jpg';
 import NewsImg from '../../../assets/pics/news.jpg';
 
 const ArtCards = (props) => {

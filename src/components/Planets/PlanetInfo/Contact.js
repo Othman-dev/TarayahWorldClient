@@ -1,5 +1,6 @@
 import React, {useState} from 'react';
 import Axios from 'axios';
+import firebase from '../../../Firebase/firebase.js';
 
 const Contact = (props) => {
 
@@ -21,7 +22,7 @@ const Contact = (props) => {
 		function handleSubmit(event) {
 				event.preventDefault()
 
-				Axios.post('http://localhost:3030/api/email', message)
+				Axios.post('https://us-central1-tarayah-world.cloudfunctions.net/genericEmail/', message)
 				.then(res => {
 						if(res.data.success) {
 								setMessage({...message,
@@ -36,6 +37,7 @@ const Contact = (props) => {
 						}
 				})
 				.catch(err => {
+								console.log(err)
 								setMessage({...message,
 								sent:false,
 								disabled:false

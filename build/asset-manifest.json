@@ -1,0 +1,41 @@
+{
+  "files": {
+    "main.css": "/static/css/main.c2fcc5cf.chunk.css",
+    "main.js": "/static/js/main.b1118e95.chunk.js",
+    "main.js.map": "/static/js/main.b1118e95.chunk.js.map",
+    "runtime-main.js": "/static/js/runtime-main.24609779.js",
+    "runtime-main.js.map": "/static/js/runtime-main.24609779.js.map",
+    "static/js/2.f52bcf8b.chunk.js": "/static/js/2.f52bcf8b.chunk.js",
+    "static/js/2.f52bcf8b.chunk.js.map": "/static/js/2.f52bcf8b.chunk.js.map",
+    "index.html": "/index.html",
+    "precache-manifest.2ee83bb19f25f0c8917d59db426179b4.js": "/precache-manifest.2ee83bb19f25f0c8917d59db426179b4.js",
+    "service-worker.js": "/service-worker.js",
+    "static/css/main.c2fcc5cf.chunk.css.map": "/static/css/main.c2fcc5cf.chunk.css.map",
+    "static/js/2.f52bcf8b.chunk.js.LICENSE.txt": "/static/js/2.f52bcf8b.chunk.js.LICENSE.txt",
+    "static/media/App.css": "/static/media/SocialsImg.332b8e98.jpg",
+    "static/media/StarsBg.mp4": "/static/media/StarsBg.c7edd66c.mp4",
+    "static/media/Tarayah.png": "/static/media/Tarayah.db6b603b.png",
+    "static/media/TarayahWorld.png": "/static/media/TarayahWorld.2f8ec7bd.png",
+    "static/media/World.png": "/static/media/World.33bd27d2.png",
+    "static/media/discord.jpg": "/static/media/discord.19834e1b.jpg",
+    "static/media/etsy.jpg": "/static/media/etsy.09ded6ae.jpg",
+    "static/media/instagram.svg": "/static/media/instagram.fc23b902.svg",
+    "static/media/introUniverse.mp4": "/static/media/introUniverse.186bfe7d.mp4",
+    "static/media/news.jpg": "/static/media/news.cc83c0da.jpg",
+    "static/media/painting1.jpg": "/static/media/painting1.b3a31a38.jpg",
+    "static/media/painting2.jpg": "/static/media/painting2.6fcf5a51.jpg",
+    "static/media/painting3.jpg": "/static/media/painting3.296554fa.jpg",
+    "static/media/painting4.jpg": "/static/media/painting4.5c03db1f.jpg",
+    "static/media/painting5.jpg": "/static/media/painting5.70085047.jpg",
+    "static/media/painting6.jpg": "/static/media/painting6.d7afd8a0.jpg",
+    "static/media/twitch.jpg": "/static/media/twitch.fc068e10.jpg",
+    "static/media/twitter.svg": "/static/media/twitter.c9f12008.svg",
+    "static/media/youtube.svg": "/static/media/youtube.11fbf1e3.svg"
+  },
+  "entrypoints": [
+    "static/js/runtime-main.24609779.js",
+    "static/js/2.f52bcf8b.chunk.js",
+    "static/css/main.c2fcc5cf.chunk.css",
+    "static/js/main.b1118e95.chunk.js"
+  ]
+}
