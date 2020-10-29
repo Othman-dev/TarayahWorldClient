@@ -2,8 +2,8 @@ import React from 'react';
 import Youtube from '../../assets/pics/youtube.svg';
 import Instagram from '../../assets/pics/instagram.svg';
 import Twitter from '../../assets/pics/twitter.svg';
-import Twitch from '../../assets/pics/twitch.jpg';
-import Discord from '../../assets/pics/discord.jpg';
+import Twitch from '../../assets/pics/twitch.png';
+import Discord from '../../assets/pics/discord.png';
 import Etsy from '../../assets/pics/etsy.jpg';
 import TarayahWorld from '../../assets/pics/TarayahWorld.png';
 
